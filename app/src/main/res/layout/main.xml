@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:padding="16dp"
+	tools:context="e.rpl.latihandate.MainActivity">
+	<EditText
+		android:id="@+id/txt_tgl"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:clickable="true"
+		android:editable="false"
+		android:focusable="false"
+		android:hint="Tanggal"/>
+	
+	<EditText
+		android:id="@+id/txt_jam"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:clickable="true"
+		android:editable="false"
+		android:focusable="false"
+		android:hint="Jam"/>
+	<Button
+		android:id="@+id/btn_get_datetime"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Get Date Time"/>
+	<Button
+		android:id="@+id/btn_reset"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:onClick="Clear"
+		android:text="Reset"/>
+	<TextView
+		android:layout_marginLeft="5dp"
+		android:layout_marginTop="20dp"
+		android:id="@+id/tampil_date"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="18sp"/>
+	<TextView
+		android:layout_marginLeft="5dp"
+		android:layout_marginTop="20dp"
+		android:id="@+id/tampil_time"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="18sp"/>
+</LinearLayout>
